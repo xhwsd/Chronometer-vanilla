@@ -25,9 +25,11 @@ function Chronometer:DruidSetup()
 	self:AddTimer(self.SPELL, BS["Frenzied Regeneration"], 10, 0,1,1)
 	self:AddTimer(self.SPELL, BS["Hibernate"],             20, 1,0,0, { gr=3, rc=true, d={rs=10}  })
 	self:AddTimer(self.SPELL, BS["Innervate"],             20, 1,1,1)
-	self:AddTimer(self.SPELL, BS["Insect Swarm"],          12, 1,0,0, { rc=true })
+	-- 修改虫群持续时间为18秒 xhwsd@qq.com 2024-12-7
+	self:AddTimer(self.SPELL, BS["Insect Swarm"],          18, 1,0,0, { rc=true })
 	self:AddTimer(self.SPELL, BS["Nature's Grasp"],        45, 0,1,1, { cr="BLUE", ea={[BS["Entangling Roots"]]=45} })
-	self:AddTimer(self.SPELL, BS["Moonfire"],              12, 1,0,0, { rc=true })
+	-- 修改月火术持续时间为18秒 xhwsd@qq.com 2024-12-7
+	self:AddTimer(self.SPELL, BS["Moonfire"],              18, 1,0,0, { rc=true })
 	self:AddTimer(self.SPELL, BS["Pounce"],                 2, 1,0,0, { ea={[BS["Pounce Bleed"]]=1} })
 	self:AddTimer(self.SPELL, BS["Rake"],                   9, 1,0,0, { rc=true })
 	self:AddTimer(self.SPELL, BS["Regrowth"],              21, 1,1,1, { rc=true, mc=BS["Swiftmend"] })
