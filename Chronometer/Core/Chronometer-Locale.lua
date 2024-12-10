@@ -1,4 +1,4 @@
-﻿local L = AceLibrary("AceLocale-2.2"):new("Chronometer")
+local L = AceLibrary("AceLocale-2.2"):new("Chronometer")
 
 L:RegisterTranslations("enUS", function() return {
 	["Chronometer"] = true,
@@ -455,8 +455,10 @@ L:RegisterTranslations("zhCN", function() return {
 	--["Chronometer"] = true,
 	["Chronometer - an Ace2 Timer Mod"] = "Chronometer - ACE2计时条插件",
 
-	--["General"] = "Основное",
-	--["General options"] = "Основные настройки",
+	["Chronometer Options"] = "Chronometer 设置", -- 0.13
+
+	["General"] = "一般",
+	["General options"] = "一般设置",
 	
 	["Anchor"] = "锚点",
 	["Shows the dragable anchor."] = "显示可拖动的锚点。",
@@ -482,6 +484,25 @@ L:RegisterTranslations("zhCN", function() return {
 	["Self"] = "自身",
 	["Toggles bars for spell durations on the player."] = "切换是否显示为玩家身上的法术效果显示计时条。",
 	
+	["Only self"] = "只有自己",  -- << 0.13
+
+	["Timers"] = "计时器",
+	["Timers visibility options"] = "计时器可见设置",
+
+	["Class specific timers"] = "职业计时器",
+	["Class Spells"] = "职业法术",
+	["Class Events"] = "职业事件",
+	
+	["Class Spell timers"] = "职业法术计时器",
+	["Class Event timers"] = "职业事件计时器",
+
+	["Race specific timers"] = "种族技能计时器",
+	["Racial"] = "种族技能",
+	
+	["Common"] = "通用",
+	["Common timers"] = "通用计时器",
+	["Common timers (trinkets, potions, etc.)"] = "通用计时器（饰品，药水）等", -- >> 0.13
+
 	["Reverse"] = "反转",
 	["Toggles if bars are reversed (fill up instead of emptying)."] = "切换是否反转计时条。（递减而非递增）",
 
@@ -501,11 +522,11 @@ L:RegisterTranslations("zhCN", function() return {
 	["Bar Height"] = "计时条高度",
 	["Set the bar height."] = "设定计时条高度。",
 	
---	["Icon Position"] = true,
---	["Changes icon position."] = true,
+	["Icon Position"] = "图标位置",
+	["Changes icon position."] = "改变小图标的位置",
 	
---	["Bar Vertical Spacing"] = true,
---	["Set the bar vertical spacing."] = true,
+	["Bar Vertical Spacing"] = "条垂直间距",
+	["Set the bar vertical spacing."] = "条的垂直间距",
 	
 	["Text Size"] = "文字尺寸",
 	["Set the bar text size."] = "设定计时条文字尺寸。",
@@ -525,11 +546,11 @@ L:RegisterTranslations("zhCN", function() return {
 	["Bar"] = "计时条",
 	["CandyBar options"] = "CandyBar 设置",
 	
-	["Fubar plugin"] = "Fubar plugin",
-	["Fubar plugin options."] = "Fubar plugin options.",
+	["Fubar plugin"] = "Fubar 插件",
+	["Fubar plugin options."] = "Fubar 插件设置。",
 	
 	["Hide"] = "隐藏",
 	
 	-- These all need to be added to Babble-Spell!!!
-	
+	["Improved Fire Totems"] = "强化火焰图腾",
 } end)
