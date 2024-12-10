@@ -36,7 +36,7 @@ libs\Compost-2.0\Compost-2.0.lua
 libs\ParserLib\ParserLib.lua
 libs\ParserLib\FixGlobalString.lua
 libs\ParserLib\optimizer-enUS.lua 
-libs\ParserLib\optimizer-koKR.lua 
+libs\ParserLib\optimizer-zhCN.lua 
 
 libs\PaintChips-2.0\PaintChips-2.0.lua
 libs\CandyBar-2.0\CandyBar-2.0.lua
